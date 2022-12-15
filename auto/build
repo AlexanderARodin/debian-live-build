@@ -1,5 +1,5 @@
 #!/bin/env sh
 
 lb build noauto \
-  --color \
-  2>&1 | tee build.log
+	--color \
+	2>&1 | tee build.log
