@@ -8,9 +8,9 @@ lb config noauto \
 	--apt-indices false \
 	--apt-recommends false
 
-if [ "$1" = "--recloning" ]; then
+#if [ "$1" = "--recloning" ]; then
 	echo "clone GIT.."
 	git clone https://github.com/AlexanderARodin/debian-live-build.git
-fi
+#fi
 
 cp -r ./debian-live-build/config ./
