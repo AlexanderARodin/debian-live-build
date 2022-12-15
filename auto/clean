@@ -1,12 +1,12 @@
 #!/bin/env sh
 
 lb clean noauto \
-  --color \
-  --purge
+	--color \
+	--purge
 
 if [ "$1" = "--config" ]; then
-  echo "rm CONFIGs.."
-  rm -r config
+	echo "rm CONFIGs.."
+	rm -r config
 else
-  echo "CONFIGs preserved"
+	echo "CONFIGs preserved"
 fi
