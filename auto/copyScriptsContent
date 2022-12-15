@@ -1,3 +1,5 @@
 #!/bin/env sh
 
-d
+for item in clean config build; do
+	cat ./$item
+done
