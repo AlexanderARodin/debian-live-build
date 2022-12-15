@@ -1,13 +1,16 @@
 #!/bin/env sh
 
 lb config noauto \
-  --color \
-  --image-name zerro \
-  --debian-installer live \
-  --debian-installer-gui false \
-  --apt-indices false \
-  --apt-recommends false
+	--color \
+	--image-name zerro \
+	--debian-installer live \
+	--debian-installer-gui false \
+	--apt-indices false \
+	--apt-recommends false
 
-#git clone https://github.com/AlexanderARodin/debian-live-build.git
+if [ "$1" = "--clone-git" ]; then
+	echo "clone GIT.."
+	git clone https://github.com/AlexanderARodin/debian-live-build.git
+fi
 
-#cp -r ./auto/ddd/config ./
+cp -r ./auto/ddd/config ./
