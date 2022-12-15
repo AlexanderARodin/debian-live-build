@@ -13,4 +13,4 @@ if [ "$1" = "--clone-git" ]; then
 	git clone https://github.com/AlexanderARodin/debian-live-build.git
 fi
 
-cp -r ./auto/ddd/config ./
+cp -r ./debian-live-build/config ./
