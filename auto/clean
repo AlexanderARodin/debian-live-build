@@ -1,0 +1,12 @@
+#!/bin/env sh
+
+lb build noauto \
+  --color \
+  --purge
+
+if [ "$1" = "--config" ]; then
+  echo "rm CONFIGs.."
+  rm -r config
+else
+  echo "CONFIGs preserved"
+fi
