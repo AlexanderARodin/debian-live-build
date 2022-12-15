@@ -4,9 +4,28 @@ lb clean noauto \
 	--color \
 	--purge
 
-if [ "$1" = "--config" ]; then
-	echo "rm CONFIGs.."
-	rm -r config
-else
-	echo "CONFIGs preserved"
-fi
+for item in $@; do
+	case "$item" in
+		--config)
+			echo "rm CONFIGs.."
+			rm -r config
+			;;
+		--git)
+			echo "rm GITs.."
+			rm -r debian-live-build
+			;;
+		*)
+			echo unknown key: $item
+			exit 1
+			;;
+	esac
+done
+
+
+
+#if [ "$1" = "--config" ]; then
+#	echo "rm CONFIGs.."
+#	rm -r config
+#else
+#	echo "CONFIGs preserved"
+#fi
