@@ -9,8 +9,6 @@ lb config noauto \
 	--debian-installer-gui false \
 	--apt-indices false \
 	--apt-recommends false \
-	--b hdd \
-	--binary-filesystem ext4 \
 
 
 #if [ "$1" = "--recloning" ]; then
