@@ -1,3 +1,4 @@
+ca-certificates
 openssh-client
 zsh
 tmux
