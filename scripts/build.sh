@@ -8,7 +8,7 @@ lb build noauto \
 	--color \
 	2>&1 | tee build.log
 
-entTime=$(date)
+endTime=$(date)
 echo
 echo "time stats:"
 echo "start: $startTime"
