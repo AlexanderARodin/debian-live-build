@@ -1,11 +1,11 @@
-thisclone="debian-live-build"
+thisclone=debian-live-build
 
 help:
-	echo "needs a target"
+	@echo "needs a target"
 
 init:
-	if [ -d "$thisclone" ]; then; rm -r "$thisclone"; fi
+	if [ -d ./$(thisclone) ]; then rm -rf ./$(thisclone); fi
 	git clone "https://github.com/AlexanderARodin/$thisclone.git"
-	chmod +x ./debian-live-build/scripts/*
-	cp ./debian-live-build/.Makefile ./Makefile
+	chmod +x ./$(thisclone)/scripts/*
+	cp ./$(thisclone)/.Makefile ./Makefile
 
