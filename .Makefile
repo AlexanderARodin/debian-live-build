@@ -19,5 +19,5 @@ config: clean
 tuning: config
 	./$(thisclone)/scripts/tuning.sh
 
-build: tuning
+build:
 	sudo ./$(thisclone)/scripts/build.sh
