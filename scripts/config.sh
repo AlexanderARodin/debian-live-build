@@ -4,7 +4,7 @@ set -e
 
 lb config noauto \
 	--color \
-	--image-name zerro \
+	--image-name live_2 \
 	--apt-indices false \
 	--apt-recommends false \
 	--debootstrap-option "--variant=minbase"
