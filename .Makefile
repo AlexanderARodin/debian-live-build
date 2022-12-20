@@ -10,3 +10,14 @@ init:
 	@chmod +x ./$(thisclone)/scripts/*
 	@cp ./$(thisclone)/.Makefile ./Makefile
 
+clean: init
+	./$(thisclone)/scripts/clean.sh
+	
+config: clean
+	./$(thisclone)/scripts/config.sh
+
+tuning: config
+	./$(thisclone)/scripts/tuning.sh
+
+build: tuning
+	./$(thisclone)/scripts/build.sh
