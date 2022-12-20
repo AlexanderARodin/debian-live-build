@@ -7,6 +7,7 @@ lb config noauto \
 	--image-name zerro \
 	--apt-indices false \
 	--apt-recommends false \
+	--debootstrap-option "--variant=minbase"
 
 
 #	--debian-installer live \
