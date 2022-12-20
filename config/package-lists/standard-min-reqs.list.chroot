@@ -12,4 +12,3 @@ os-prober
 pigz
 rsync
 uuid-runtime
-ca-certificates
