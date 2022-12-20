@@ -1,5 +1,10 @@
 help:
-  echo "needs a target"
+	echo "needs a target"
 
-re-clone-git:
-  
+init: cloneGit
+	cp ./debian-live-build/.Makefile ./Makefile
+	chmod +x ./debian-live-build/scripts/*
+
+cloneGit:
+	./debian-live-build/scripts/remakeClone.sh
+
