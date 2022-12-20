@@ -14,10 +14,10 @@ clean: init
 	./$(thisclone)/scripts/clean.sh
 	
 config: clean
-	./$(thisclone)/scripts/config.sh
+	sudo ./$(thisclone)/scripts/config.sh
 
 tuning: config
 	./$(thisclone)/scripts/tuning.sh
 
 build: tuning
-	./$(thisclone)/scripts/build.sh
+	sudo ./$(thisclone)/scripts/build.sh
