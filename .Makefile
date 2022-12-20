@@ -11,10 +11,10 @@ init:
 	@cp ./$(thisclone)/.Makefile ./Makefile
 
 clean: init
-	./$(thisclone)/scripts/clean.sh
+	sudo ./$(thisclone)/scripts/clean.sh
 	
 config: clean
-	sudo ./$(thisclone)/scripts/config.sh
+	./$(thisclone)/scripts/config.sh
 
 tuning: config
 	./$(thisclone)/scripts/tuning.sh
