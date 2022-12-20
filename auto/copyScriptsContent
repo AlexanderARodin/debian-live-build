@@ -1,5 +1,0 @@
-#!/bin/env sh
-
-for item in clean config build; do
-	cat ./$item > ../../auto/$item
-done
