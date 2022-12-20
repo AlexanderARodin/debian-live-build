@@ -1,5 +1,5 @@
 #!/bin/env sh
-
+exit 0
 set -e
 
 #cp -vr ./debian-live-build/config ./
