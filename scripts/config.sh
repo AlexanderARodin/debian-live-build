@@ -7,7 +7,7 @@ lb config noauto \
 	--image-name live_2 \
 	--apt-indices false \
 	--apt-recommends false \
-	--debootstrap-option "--variant=minbase"
+	
 
 
 #	--debian-installer live \
