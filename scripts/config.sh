@@ -2,18 +2,14 @@
 
 set -e
 
-lb config noauto \
-	--color \
-	--image-name live_3 \
-	--apt-indices false \
-	--apt-recommends false \
-
-
-
-#	--binary-image hdd \
-#	--binary-filesystem ext4 \
+	OP="--color"
+	OP="$OP --image-name max-libs"
+	#OP="$OP --binary-image hdd --binary-filesystem ext4"
+	OP="$OP --debian-installer live --debian-installer-gui false"
 	
+	#OP="$OP --apt-indices false"
+	#OP="$OP --apt-recommends false"
+	
+	OP="$OP --archive-areas \"main contrib non-free\""
 
-
-#	--debian-installer live \
-#	--debian-installer-gui false \
+lb config noauto $OP
