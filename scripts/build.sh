@@ -11,5 +11,5 @@ lb build noauto \
 endTime=$(date)
 echo
 echo "time stats:"
-echo "start: $startTime"
-echo "stop : $endTime"
+echo "  start: $startTime"
+echo "  stop : $endTime"
