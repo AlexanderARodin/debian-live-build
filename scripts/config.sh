@@ -3,7 +3,7 @@
 set -e
 
 	OP="--color"
-	OP="$OP --image-name midle"
+	OP="$OP --image-name allarch"
 	#OP="$OP --binary-image hdd --binary-filesystem ext4"
 	OP="$OP --debian-installer live --debian-installer-gui false"
 	
