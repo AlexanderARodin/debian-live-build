@@ -10,7 +10,7 @@ set -e
 	#OP="$OP --apt-indices false"
 	#OP="$OP --apt-recommends false"
 	
-	OP="$OP --archive-areas \"main contrib\""
+	OP="$OP --archive-areas \"main\""
 	#OP="$OP --debootstrap-options \"--variant=minbase\""
 
 lb config noauto $OP
