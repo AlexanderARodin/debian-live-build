@@ -1,3 +1,5 @@
 grub2
 lshw
 lsscsi
+pciutils
+usbutils
