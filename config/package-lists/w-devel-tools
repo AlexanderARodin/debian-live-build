@@ -1,1 +1,9 @@
 gcc
+flex
+bison
+build-essential
+dwarves
+bc
+libssl-dev
+libelf-dev
+libncurses-dev
