@@ -4,8 +4,6 @@ thisclone=debian-live-build
 help:
 	@echo "needs a target"
 	@echo "init | clean | config | tuning | build"
-	@echo "needs a target"
-	@echo "needs a target"
 
 init:
 	@if [ -d ./$(thisclone) ]; then rm -rf ./$(thisclone); fi
