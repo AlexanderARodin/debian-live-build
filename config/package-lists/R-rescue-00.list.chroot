@@ -3,3 +3,4 @@ lshw
 lsscsi
 pciutils
 usbutils
+exfatprogs
