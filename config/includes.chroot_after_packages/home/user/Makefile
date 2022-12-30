@@ -1,4 +1,4 @@
 launch:
 	apt install -y git
-	chmod uso+x launcher.sh
-	launcher.sh
+	chmod ugo+x launcher.sh
+	./launcher.sh
