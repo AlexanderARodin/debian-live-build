@@ -8,4 +8,4 @@ cp -vr ./debian-live-build/config/package-lists/*.list.chroot ./config/package-l
 
 mkdir ./config/includes.chroot_after_packages/home/
 mkdir ./config/includes.chroot_after_packages/home/user/
-cp -vr ./debian-live-build/config/includes.chroot_after_packages/home/user/Makefile ./config/includes.chroot_after_packages/home/user/Makefile
+cp -vr ./debian-live-build/config/includes.chroot_after_packages/home/user/* ./config/includes.chroot_after_packages/home/user/
