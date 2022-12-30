@@ -1,13 +1,13 @@
 #!/bin/env sh
 
 #NAME=live-rescuer
-NAME=fleshka
+NAME=creator
 
 set -e
 
 	OP="--color"
 	OP="$OP --image-name $NAME"
-	OP="$OP --binary-image hdd --binary-filesystem ext2"
+	#OP="$OP --binary-image hdd --binary-filesystem ext2"
 	#OP="$OP --debian-installer live --debian-installer-gui false"
 	
 	#OP="$OP --apt-indices false"
