@@ -7,3 +7,4 @@ bc
 libssl-dev
 libelf-dev
 libncurses-dev
+git
