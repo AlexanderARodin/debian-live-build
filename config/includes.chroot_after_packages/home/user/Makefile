@@ -1,6 +1,4 @@
 launch:
 	apt install -y git
-	cd ..
-	git clone https://github.com/AlexanderARodin/raanixCreator.git
-	cd raanixCreator
-	make
+	chmod uso+x launcher.sh
+	launcher.sh
