@@ -9,5 +9,4 @@ cp -vr ./debian-live-build/config/package-lists/*.list.chroot ./config/package-l
 mkdir ./config/includes.chroot_after_packages/home/
 mkdir ./config/includes.chroot_after_packages/home/user/
 chmod ug+x ./debian-live-build/config/includes.chroot_after_packages/home/user/launcher.sh
-cp -v ./debian-live-build/config/includes.chroot_after_packages/home/user/* ./config/includes.chroot_after_packages/home/user/
-cp -v ./debian-live-build/config/includes.chroot_after_packages/home/user/.* ./config/includes.chroot_after_packages/home/user/
+cp -vr ./debian-live-build/config/includes.chroot_after_packages/* ./config/includes.chroot_after_packages/
